@@ -3,7 +3,7 @@ title: "Parse Cloud Code"
 slug: cloud-code-and-parse
 ---
 
-Using a BaaS product (like Parse) is a great way to improve productivity by allowing developers to focus almost entirely on the client side of the app.  Parse offers some extra flexibility by allowing you to run your own code stored on Parse's servers.  It can be configured to run at certain times of Parse objects lifecycle, or simply be custom functions that can be called externally.  This feature is called Parse Cloud Code.  
+Using a BaaS (Backend-as-a-Service) product like Parse is a great way to improve productivity by allowing developers to focus almost entirely on the client side of the app.  Parse offers some extra flexibility by allowing you to run your own code stored on Parse's servers.  It can be configured to run at certain times of Parse objects lifecycle, or simply be custom functions that can be called externally.  This feature is called Parse Cloud Code.  
 
 This tutorial will cover how to quickly add some server-side code to your existing Parse project.  Naturally, this assumes that you have an existing Parse project to build off of.  If you are starting from scratch, check out our [Makestagram tutorial](https://www.makeschool.com/tutorials/build-a-photo-sharing-app-part-1/getting-started) to build a basic Parse project.
 
