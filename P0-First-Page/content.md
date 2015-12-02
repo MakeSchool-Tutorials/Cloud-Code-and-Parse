@@ -3,8 +3,9 @@ title: "Parse Cloud Code"
 slug: cloud-code-and-parse
 ---
 
-> [info]
-> This guide will help you get started with Cloud Code.
+Using a BaaS (Backend-as-a-Service) product like Parse is a great way to improve productivity by allowing developers to focus almost entirely on the client side of the app.  Parse offers some extra flexibility by allowing you to run your own code stored on Parse's servers.  It can be configured to run at certain times of Parse objects lifecycle, or simply be custom functions that can be called externally.  This feature is called Parse Cloud Code.  
+
+This tutorial will cover how to quickly add some server-side code to your existing Parse project.  Naturally, this assumes that you have an existing Parse project to build off of.  If you are starting from scratch, check out our [Makestagram tutorial](https://www.makeschool.com/tutorials/build-a-photo-sharing-app-part-1/getting-started) to build a basic Parse project.
 
 #What Is Cloud Code?
 
@@ -33,7 +34,7 @@ Once the tool is installed, you should be able to use it like any other command 
 
 You will be asked to enter your email and password for Parse. If you logged into Parse through Facebook, you need to go into your Parse account settings and set a password. Once you log in, you will have to choose between "new" and "existing." If you have already created a project on Parse, choose "existing." You will see a list of your projects show up; pick the project you are working on.
 
-#Getting Started With Code
+#Start Coding
 
 Once you are done with the process of setting up your project for Cloud Code, you will see a main.js file within cloud directory that was created for you. main.js is the file that will contain your Cloud Code.
 
@@ -57,7 +58,7 @@ Let's look at a real use of Cloud Code to get a better understanding of how to i
 >
 >           //2
 >	        var query = new Parse.Query("Channel");
->	        query.equalTo('name', name); 
+>	        query.equalTo('name', name);
 >	        query.first({ //3
 >   	        success: function(object) { //4
 >       		      if (object) {
@@ -123,3 +124,7 @@ In order to upload, let's go back to the terminal and make sure you are still in
 >     parse deploy
 
 Your cloud code will be immediately on Parse, ready to be used by your app.
+
+#Summary
+
+Parse Cloud Code adds some extra flexibility to an existing Parse project by allowing custom code to be uploaded onto Parse servers.  The code can be triggered by certain events, like object creation or destruction, or be a function that is called by an external client.  Doing this allows operations that normally should not be done by a client, like checking for uniqueness or overriding some permissions.  Taking advantage of Parse Cloud Code is a must for sophisticated apps.  Happy coding!
